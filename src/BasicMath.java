@@ -10,6 +10,11 @@ class BasicMath
 		return a-b;
 	}
 
+    public int multiplication(int a, int b)
+    {
+        return a * b;
+    }
+
 	// TODO: multiply
 	// TODO: divide
 }
