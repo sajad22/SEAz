@@ -5,6 +5,7 @@ class Test
         testSum();
 		testSubtract();
 		testMultiplication();
+		testDivide();
     }
 
     private static void testSum()
@@ -56,6 +57,24 @@ class Test
         else
         {
             System.out.println("Multiplication: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
+
+
+    private static void testDivide()
+    {
+        int a = 20;
+        int b = 10;
+        int expected = 2;
+        BasicMath bm = new BasicMath();
+        int result = bm.divide(a, b);
+        if (result == expected)
+        {
+            System.out.println("Divide: OK");
+        }
+        else
+        {
+            System.out.println("Divide: Failed, expected = " + expected + ", result = " + result);
         }
     }
 }
